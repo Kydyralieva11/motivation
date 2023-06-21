@@ -18,6 +18,9 @@
         margin-top: 23px;
         .post_card{
             background: url(../img/post_bg.png);
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
             background-size: cover;
             border-radius: 3px;
             padding: 20px;
@@ -89,6 +92,13 @@
             background: url(../img/post_bg_two.png);
             background-size: cover;
             border-radius: 3px;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        .posts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

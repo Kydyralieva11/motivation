@@ -51,6 +51,9 @@
 }
 .popular_posts .posts .post_card {
   background: url(../img/post_bg.png);
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
   background-size: cover;
   border-radius: 3px;
   padding: 20px;
@@ -123,6 +126,13 @@
   background-size: cover;
   border-radius: 3px;
 }
+@media screen and (max-width: 1000px) {
+  .popular_posts .posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .most .most_title {
   font-weight: 400;
@@ -133,11 +143,14 @@
   color: #2E2E2E;
   border-bottom: solid 1px #DEDEDE;
   padding: 16px;
+  border-bottom: solid 1px #DEDEDE;
+  padding: 16px;
 }
 .most .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
   gap: 24px;
+  margin-top: 22px;
 }
 .most .cards .card_first {
   display: flex;
